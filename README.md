@@ -21,12 +21,30 @@ pip install .
 
 ## Usage
 
-Here are some examples of how to use the functions provided by AUPYO:
+For now aupyo exposes two audio classes
+- a Track, containing a duration, sample rate, raw audio data, ...
+- a Mixture, a dictionnary of multiple tracks with instrument as keys.
 
+### Example usage 
+
+```python
+from aupyo.type import Mixture, Track
+```
 
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+### Project management
+
+This project uses [uv](https://astral.sh/uv) to manage dependencies ! 
+If you want to deploy the dev .venv easily, just install `uv` and run
+
+```bash
+uv sync
+```
+
+This should get you started instantly. 
 
 ## License
 
